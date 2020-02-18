@@ -70,6 +70,9 @@ echo '$HOME =' $HOME
 __Vous enregistrerez vos scripts dans un dossier script que vous créerez dans votre répertoire personnel.
 Tous les scripts sont bien entendu à tester.__  
 __Ajoutez le chemin vers script à votre PATH de manière permanente.__  
+```bash
+"PATH=$PATH:~/script"
+```
 
 
 
