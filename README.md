@@ -133,6 +133,20 @@ script, le message doit changer automatiquement)__
 ## Exercice 5. Factorielle
 __Écrivez un programme qui calcule la factorielle d’un entier naturel passé en paramètre (on supposera que
 l’utilisateur saisit toujours un entier naturel).__  
+```bash 
+factoriel()
+{
+  res=1
+  for i in `seq 1 $1`;
+  do
+    let "res = res*i"
+  done
+  echo $res
+}
+test=$(factoriel 4)
+
+echo $test
+```
   
 ## Exercice 6. Le juste prix
 __Écrivez un script qui génère un nombre aléatoire entre 1 et 1000 et demande à l’utilisateur de le deviner.
