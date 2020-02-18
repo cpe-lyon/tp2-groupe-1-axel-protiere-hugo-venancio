@@ -129,6 +129,21 @@ __Écrivez un script qui vérifie l’existence d’un utilisateur dont le nom e
 script est appelé sans nom d’utilisateur, il affiche le message : ”Utilisation : nom_du_script nom_utilisateur”,
 où nom_du_script est le nom de votre script récupéré automatiquement (si vous changez le nom de votre
 script, le message doit changer automatiquement)__  
+
+```bash
+#!/bin/bash
+
+if [ -z $1 ]; then
+	echo -e "\n Utilisation : $0 nom_utilisateur"
+	return 1
+fi
+
+if id -u $1 >/dev/null 2>&1; then
+	echo -e "\n cet utilisateur existe"
+else
+	echo -e "\n cet utilisateur n'existe pas !"
+fi
+```
   
 ## Exercice 5. Factorielle
 __Écrivez un programme qui calcule la factorielle d’un entier naturel passé en paramètre (on supposera que
