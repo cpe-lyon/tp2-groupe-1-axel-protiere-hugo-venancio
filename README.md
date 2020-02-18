@@ -13,6 +13,5 @@ Dans les dossiers suivants :
 /usr/games  
 /usr/local/games  
 /snap/bin  
-  
 Ils sont définis par la variable d'environnement PATH  
 
