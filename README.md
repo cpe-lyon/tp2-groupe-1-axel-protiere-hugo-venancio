@@ -81,7 +81,7 @@ l’utilisateur ne doit pas s’afficher.__
 ## Exercice 3. Expressions rationnelles
 __Ecrivez un script qui prend un paramètre et utilise la fonction suivante pour vérifier que ce paramètre
 est un nombre réel :__
-__```bash
+```bash
 function is_number()
 {
 re='^[+-]?[0-9]+([.][0-9]+)?$'
@@ -91,29 +91,36 @@ else
 return 0
 fi
 }
-__```
+```
 __Il affichera un message d’erreur dans le cas contraire.__  
   
 ## Exercice 4. Contrôle d’utilisateur
-Écrivez un script qui vérifie l’existence d’un utilisateur dont le nom est donné en paramètre du script. Si le
+__Écrivez un script qui vérifie l’existence d’un utilisateur dont le nom est donné en paramètre du script. Si le
 script est appelé sans nom d’utilisateur, il affiche le message : ”Utilisation : nom_du_script nom_utilisateur”,
 où nom_du_script est le nom de votre script récupéré automatiquement (si vous changez le nom de votre
-script, le message doit changer automatiquement)
-Exercice 5. Factorielle
-Écrivez un programme qui calcule la factorielle d’un entier naturel passé en paramètre (on supposera que
-l’utilisateur saisit toujours un entier naturel).
-Exercice 6. Le juste prix
-Écrivez un script qui génère un nombre aléatoire entre 1 et 1000 et demande à l’utilisateur de le deviner.
-Le programme écrira ”C’est plus !”, ”C’est moins !” ou ”Gagné !” selon les cas (vous utiliserez $RANDOM).
-Exercice 7. Statistiques
-1. Écrivez un script qui prend en paramètres trois entiers (entre -100 et +100) et affiche le min, le max
+script, le message doit changer automatiquement)__  
+  
+## Exercice 5. Factorielle
+__Écrivez un programme qui calcule la factorielle d’un entier naturel passé en paramètre (on supposera que
+l’utilisateur saisit toujours un entier naturel).__  
+  
+## Exercice 6. Le juste prix
+__Écrivez un script qui génère un nombre aléatoire entre 1 et 1000 et demande à l’utilisateur de le deviner.
+Le programme écrira ”C’est plus !”, ”C’est moins !” ou ”Gagné !” selon les cas (vous utiliserez $RANDOM).__  
+  
+## Exercice 7. Statistiques
+__1. Écrivez un script qui prend en paramètres trois entiers (entre -100 et +100) et affiche le min, le max
 et la moyenne. Vous pouvez réutiliser la fonction de l’exercice 3 pour vous assurer que les paramètres
-sont bien des entiers.
-2. Généralisez le programme à un nombre quelconque de paramètres (pensez à SHIFT)
-3. Modifiez votre programme pour que les notes ne soient plus données en paramètres, mais saisies et
-stockées au fur et à mesure dans un tableau.
-Exercice 8. Pour les plus rapides
-Écrivez un script qui affiche les combinaisons possibles de couleurs (cf. TP 1) :
+sont bien des entiers.__  
+  
+__2. Généralisez le programme à un nombre quelconque de paramètres (pensez à SHIFT)__  
+  
+__3. Modifiez votre programme pour que les notes ne soient plus données en paramètres, mais saisies et
+stockées au fur et à mesure dans un tableau.__  
+  
+## Exercice 8. Pour les plus rapides
+__Écrivez un script qui affiche les combinaisons possibles de couleurs (cf. TP 1) :__  
+  
 
 
 
