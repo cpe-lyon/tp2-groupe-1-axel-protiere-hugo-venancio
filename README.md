@@ -12,7 +12,7 @@ Dans les dossiers suivants :
 /bin  
 /usr/games  
 /usr/local/games  
-/snap/bin  ```
+/snap/bin ```  
 Ils sont définis par la variable d'environnement PATH  
 __2. Quelle variable d’environnement permet à la commande cd tapée sans argument de vous ramener dans__
 __votre répertoire personnel ?__  
