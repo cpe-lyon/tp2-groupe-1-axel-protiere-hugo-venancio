@@ -92,6 +92,23 @@ function is_number()
     fi
 }
 ```
+
+```
+is_number()
+{
+  re='^[+-]?[0-9]+([.][0-9]+)?$'
+  if ! [[ $1 =~ $re ]] ; then
+    echo 1
+  else
+    echo 0
+  fi
+}
+res=$(is_number 1)
+if [ $res = 0 ]
+then
+        echo Ce nombre est un réel 
+fi
+```
 __Il affichera un message d’erreur dans le cas contraire.__  
   
 ## Exercice 4. Contrôle d’utilisateur
