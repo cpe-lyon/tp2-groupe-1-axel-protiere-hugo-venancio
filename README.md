@@ -12,11 +12,13 @@ Dans les dossiers suivants :
 /bin  
 /usr/games  
 /usr/local/games  
-/snap/bin ```  
+/snap/bin
+```
 Ils sont définis par la variable d'environnement PATH  
 __2. Quelle variable d’environnement permet à la commande cd tapée sans argument de vous ramener dans__
 __votre répertoire personnel ?__  
-HOME  
+```HOME  
+```
 __3. Explicitez le rôle des variables LANG, PWD, OLDPWD, SHELL et \_\.__  
 LANG : : la variable d’environnement LANG détermine la langue que les logiciels
 utilisent pour communiquer avec l’utilisateur  
@@ -33,7 +35,8 @@ __6. Transformez MY_VAR en une variable d’environnement et recommencez la ques
 C'est bon ! Elle existe, car une variable d'environnement est globale donc accessible de n'importe quel processus BASH.  
 __7. Créer la variable d’environnement NOMS ayant pour contenu vos noms de binômes séparés par un espace.
 Afficher la valeur de NOMS pour vérifier que l’affectation est correcte.__
-```Export NOMS="Protiere Venancio" ; printenv NOMS ou echo $NOMS```
+```Export NOMS="Protiere Venancio" ; printenv NOMS ou echo $NOMS
+```
 
 
 
