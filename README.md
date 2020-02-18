@@ -190,7 +190,55 @@ et la moyenne. Vous pouvez réutiliser la fonction de l’exercice 3 pour vous a
 sont bien des entiers.__  
   
 __2. Généralisez le programme à un nombre quelconque de paramètres (pensez à SHIFT)__  
+```bash
+is_number()
+{
+  re='^[+-]?[0-9]+([.][0-9]+)?$'
+  if ! [[ $1 =~ $re ]] ; then
+    echo 1
+  else
+    echo 0
+  fi
+}
+
+
+get_min_max_mean(){
+  min=$1
+  max=$1
+  total=0
+  nb=0 
+
+  for var in "$@"
+  do
+    res=$(is_number var)
+    if [ $res = 1 ]
+    then 
+      echo "Erreur de saisie"
+      return 1
+    fi
+  done
+
+  for var in "$@"
+  do
+    if [ $var -lt $min ]; then
+      min=$var
+    fi
+    if [ $var -gt $max ]; then
+      max=$var
+    fi
+    let "total=total+var"
+    let "nb=nb+1"
+  done
+  mean=$(echo "total/nb" | bc -l)
   
+  echo  "Max :  $max \nMin :  $min \nAverage : $mean"
+}
+
+
+
+res=$(get_min_max_mean 3 10 4)
+echo -e $res
+```
 __3. Modifiez votre programme pour que les notes ne soient plus données en paramètres, mais saisies et
 stockées au fur et à mesure dans un tableau.__  
   
