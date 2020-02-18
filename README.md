@@ -151,7 +151,24 @@ echo $test
 ## Exercice 6. Le juste prix
 __Écrivez un script qui génère un nombre aléatoire entre 1 et 1000 et demande à l’utilisateur de le deviner.
 Le programme écrira ”C’est plus !”, ”C’est moins !” ou ”Gagné !” selon les cas (vous utiliserez $RANDOM).__  
-  
+```bash
+echo "Trouve un nombre entre 1 et 1000"
+
+
+(( nb = RANDOM % 999 + 1 ))
+
+
+while (( rep != nb )); do
+	read -p "Veuillez saisir un prix: " rep
+	if (( rep < nb )); then
+		echo "C'est plus!"
+	elif (( rep > nb )); then
+		echo "C'est moins!"
+	fi
+done
+
+echo "C'est gagné"
+```
 ## Exercice 7. Statistiques
 __1. Écrivez un script qui prend en paramètres trois entiers (entre -100 et +100) et affiche le min, le max
 et la moyenne. Vous pouvez réutiliser la fonction de l’exercice 3 pour vous assurer que les paramètres
