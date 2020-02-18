@@ -77,6 +77,17 @@ __Ajoutez le chemin vers script à votre PATH de manière permanente.__
 __Écrivez un script testpwd.sh qui demande de saisir un mot de passe et vérifie s’il correspond ou non au
 contenu d’une variable PASSWORD dont le contenu est codé en dur dans le script. Le mot de passe saisi par
 l’utilisateur ne doit pas s’afficher.__  
+
+```bash
+PASSWORD="MonSuperMotDePasse"
+read -s -p "Mot de passe?" saisie
+
+if[$saisie=$PASSWORD] ; then
+  echo -e "\nSuper c'est correct !"
+else 
+  echo -e "\nMauvais mot de passe !"
+fi
+```
   
 ## Exercice 3. Expressions rationnelles
 __Ecrivez un script qui prend un paramètre et utilise la fonction suivante pour vérifier que ce paramètre
