@@ -4,7 +4,8 @@
 
 __1. Dans quels dossiers bash trouve-t-il les commandes tapées par l'utilisateur?__  
 Dans les dossiers suivants :  
-```/usr/local/sbin    
+```bash
+/usr/local/sbin    
 /usr/local/bin  
 /usr/sbin  
 /usr/bin  
@@ -17,7 +18,8 @@ Dans les dossiers suivants :
 Ils sont définis par la variable d'environnement PATH  
 __2. Quelle variable d’environnement permet à la commande cd tapée sans argument de vous ramener dans__
 __votre répertoire personnel ?__  
-```HOME
+```bash
+HOME
 ```
 __3. Explicitez le rôle des variables LANG, PWD, OLDPWD, SHELL et \_\.__  
 LANG : : la variable d’environnement LANG détermine la langue que les logiciels
@@ -35,7 +37,8 @@ __6. Transformez MY_VAR en une variable d’environnement et recommencez la ques
 C'est bon ! Elle existe, car une variable d'environnement est globale donc accessible de n'importe quel processus BASH.  
 __7. Créer la variable d’environnement NOMS ayant pour contenu vos noms de binômes séparés par un espace.
 Afficher la valeur de NOMS pour vérifier que l’affectation est correcte.__
-```Export NOMS="Protiere Venancio" ; printenv NOMS ou echo $NOMS
+```bash
+Export NOMS="Protiere Venancio" ; printenv NOMS ou echo $NOMS
 ```
 
 
