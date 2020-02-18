@@ -93,7 +93,7 @@ function is_number()
 }
 ```
 
-```
+```bash
 is_number()
 {
   re='^[+-]?[0-9]+([.][0-9]+)?$'
