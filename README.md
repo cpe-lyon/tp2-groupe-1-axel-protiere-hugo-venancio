@@ -38,7 +38,11 @@ C'est bon ! Elle existe, car une variable d'environnement est globale donc acces
 __7. Créer la variable d’environnement NOMS ayant pour contenu vos noms de binômes séparés par un espace.
 Afficher la valeur de NOMS pour vérifier que l’affectation est correcte.__
 ```bash
-Export NOMS="Protiere Venancio" ; printenv NOMS ou echo $NOMS
+Export NOMS="Protiere Venancio" ; printenv NOMS
+```
+ou 
+```bash
+echo $NOMS
 ```
 
 
