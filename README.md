@@ -84,12 +84,12 @@ est un nombre réel :__
 ```bash
 function is_number()
 {
-re='^[+-]?[0-9]+([.][0-9]+)?$'
-if ! [[ $1 =~ $re ]] ; then
-return 1
-else
-return 0
-fi
+    re='^[+-]?[0-9]+([.][0-9]+)?$'
+    if ! [[ $1 =~ $re ]] ; then
+        return 1
+    else
+        return 0
+    fi
 }
 ```
 __Il affichera un message d’erreur dans le cas contraire.__  
