@@ -49,6 +49,18 @@ echo "Bonjour, $NOMS"
 :q 
 . bonjour.sh
 ```
+__9. Quelle différence y a-t-il entre donner une valeur vide à une variable et l’utilisation de la commande
+unset ?__
+Si on donne une valeur vide, la variable existera quand même mais sera vide. Si on utilise unset, la variable sera undefined, donc elle n'exisetera même plus. 
+__10. Utilisez la commande echo pour écrire exactement la phrase : $HOME = chemin (où chemin est votre
+dossier personnel d’après bash)__
+```bash
+vim bonjour.sh
+echo '$HOME =' $HOME
+:w
+:q 
+. bonjour.sh
+```
 
 
 
