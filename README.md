@@ -16,7 +16,7 @@ Dans les dossiers suivants :
 Ils sont définis par la variable d'environnement PATH  
 __2. Quelle variable d’environnement permet à la commande cd tapée sans argument de vous ramener dans__
 __votre répertoire personnel ?__  
-HOME     
+HOME  
 __3. Explicitez le rôle des variables LANG, PWD, OLDPWD, SHELL et _.__  
 LANG : : la variable d’environnement LANG détermine la langue que les logiciels
 utilisent pour communiquer avec l’utilisateur  
