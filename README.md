@@ -92,7 +92,7 @@ function is_number()
     fi
 }
 ```
-
+__Il affichera un message d’erreur dans le cas contraire.__ 
 ```bash
 is_number()
 {
@@ -105,11 +105,13 @@ is_number()
 }
 res=$(is_number 1)
 if [ $res = 0 ]
-then
-        echo Ce nombre est un réel 
+  then
+    echo Ce nombre est un réel 
+  else 
+    echo Erreur
 fi
 ```
-__Il affichera un message d’erreur dans le cas contraire.__  
+ 
   
 ## Exercice 4. Contrôle d’utilisateur
 __Écrivez un script qui vérifie l’existence d’un utilisateur dont le nom est donné en paramètre du script. Si le
